@@ -1,0 +1,43 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="pushpaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C00"/>
+      <stop offset="100%" style="stop-color:#FF4500"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle -->
+  <circle cx="110" cy="110" r="110" fill="url(#pushpaGradient)"/>
+  
+  <!-- Pushpa Text -->
+  <text x="110" y="95" font-family="Arial Black, sans-serif" font-size="32" fill="#FFF" text-anchor="middle" font-weight="bold">PUSHPA</text>
+  <text x="110" y="125" font-family="Arial, sans-serif" font-size="20" fill="#FFF" text-anchor="middle" font-style="italic">The Rise</text>
+  
+  <!-- Decorative Elements -->
+  <g fill="#FFF" opacity="0.2">
+    <!-- Stylized Fire -->
+    <path d="M60 160 Q90 140 70 120 Q100 100 80 80 Q120 100 100 70 Q140 100 120 80 Q160 110 140 160 Z"/>
+    
+    <!-- Leaves Pattern -->
+    <path d="M140 60 Q160 80 180 60 M150 80 Q170 100 190 80 M160 100 Q180 120 200 100"
+          stroke="#FFF" stroke-width="2" fill="none"/>
+    <path d="M80 60 Q60 80 40 60 M70 80 Q50 100 30 80 M60 100 Q40 120 20 100"
+          stroke="#FFF" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Shine Effects -->
+  <circle cx="50" cy="50" r="5" fill="#FFF" opacity="0.5"/>
+  <circle cx="170" cy="50" r="8" fill="#FFF" opacity="0.5"/>
+  <circle cx="50" cy="170" r="8" fill="#FFF" opacity="0.5"/>
+  <circle cx="170" cy="170" r="5" fill="#FFF" opacity="0.5"/>
+  
+  <!-- Center Design -->
+  <g transform="translate(110 110)">
+    <circle r="25" fill="none" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+    <!-- Flower Pattern -->
+    <path d="M0 -20 Q10 -10 0 0 Q-10 -10 0 -20 M0 20 Q10 10 0 0 Q-10 10 0 20
+             M-20 0 Q-10 10 0 0 Q-10 -10 -20 0 M20 0 Q10 10 0 0 Q10 -10 20 0"
+          fill="#FFF" opacity="0.2"/>
+  </g>
+</svg>
