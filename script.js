@@ -11,24 +11,44 @@ const hideMusicBtn = document.querySelector('.header .fa-times');
 
 let musicIndex = 1;
 
-// Sample music list - Replace with actual Tollywood songs
+// Tollywood Music Collection
 const allMusic = [
     {
-        name: "Sample Telugu Song 1",
-        artist: "Artist 1",
-        src: "music/song1.mp3"
+        name: "Naatu Naatu",
+        artist: "Rahul Sipligunj, Kaala Bhairava",
+        src: "music/naatu-naatu.mp3",
+        img: "images/rrr-album.svg"
     },
     {
-        name: "Sample Telugu Song 2",
-        artist: "Artist 2",
-        src: "music/song2.mp3"
+        name: "Saami Saami",
+        artist: "Mounika Yadav",
+        src: "music/saami-saami.mp3",
+        img: "images/pushpa-album.svg"
     },
-    // Add more songs here
+    {
+        name: "Srivalli",
+        artist: "Sid Sriram",
+        src: "music/srivalli.mp3",
+        img: "images/pushpa-album.svg"
+    },
+    {
+        name: "Oo Antava",
+        artist: "Indravathi Chauhan",
+        src: "music/oo-antava.mp3",
+        img: "images/pushpa-album.svg"
+    },
+    {
+        name: "Dosti",
+        artist: "Hemachandra, Amit Trivedi",
+        src: "music/dosti.mp3",
+        img: "images/rrr-album.svg"
+    }
 ];
 
 window.addEventListener("load", () => {
     loadMusic(musicIndex);
     playingSong();
+    loadMusicList();
 });
 
 function loadMusic(indexNumb) {
@@ -36,6 +56,26 @@ function loadMusic(indexNumb) {
     audio.src = music.src;
     document.querySelector('h1').innerText = music.name;
     document.querySelector('p').innerText = music.artist;
+    document.querySelector('.song-img').src = music.img || 'images/default-album.svg';
+}
+
+function loadMusicList() {
+    const ulTag = document.querySelector(".music-list ul");
+    ulTag.innerHTML = '';
+    
+    allMusic.forEach((music, index) => {
+        let liTag = `
+            <li li-index="${index + 1}">
+                <div class="row">
+                    <span>${music.name}</span>
+                    <p>${music.artist}</p>
+                </div>
+                <audio class="${music.src}" src="${music.src}"></audio>
+                <span class="audio-duration">3:40</span>
+            </li>
+        `;
+        ulTag.insertAdjacentHTML("beforeend", liTag);
+    });
 }
 
 function playMusic() {
