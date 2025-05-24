@@ -1,0 +1,19 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="110" cy="110" r="110" fill="#FF6B6B" opacity="0.2"/>
+  
+  <!-- Music Note Design -->
+  <g transform="translate(55, 45)" fill="#FF6B6B">
+    <!-- Music Note Body -->
+    <path d="M80 20 L80 100 C80 111 70 120 60 120 C50 120 40 111 40 100 C40 89 50 80 60 80 C65 80 70 82 75 85 L75 10 L30 20 L30 90 C30 101 20 110 10 110 C0 110 -10 101 -10 90 C-10 79 0 70 10 70 C15 70 20 72 25 75 L25 0 L80 20Z"/>
+  </g>
+  
+  <!-- Decorative Circles -->
+  <circle cx="40" cy="40" r="5" fill="#FF6B6B" opacity="0.5"/>
+  <circle cx="180" cy="40" r="8" fill="#FF6B6B" opacity="0.5"/>
+  <circle cx="40" cy="180" r="8" fill="#FF6B6B" opacity="0.5"/>
+  <circle cx="180" cy="180" r="5" fill="#FF6B6B" opacity="0.5"/>
+  
+  <!-- Center Ring -->
+  <circle cx="110" cy="110" r="25" fill="none" stroke="#FF6B6B" stroke-width="2" opacity="0.5"/>
+</svg>
