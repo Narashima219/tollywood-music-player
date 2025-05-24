@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollywood Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <img src="images/default-album.svg" class="song-img" alt="Album Art">
+            <h1>Telugu Hits</h1>
+            <p>Featured Playlist</p>
+
+            <audio id="song">
+                <source src="" type="audio/mpeg">
+            </audio>
+
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <audio id="main-audio" src=""></audio>
+                </div>
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="circle-btn">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="circle-btn play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="circle-btn">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="fas fa-list-ul"></i>
+                        <span>Music List</span>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <!-- Songs will be added dynamically -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
